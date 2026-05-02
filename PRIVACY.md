@@ -8,7 +8,7 @@ This policy explains what information Shoot AI ("the app", "we", "us") collects 
 
 ## 1. Who runs Shoot AI
 
-Shoot AI is operated by Max German, a solo developer based in the United Kingdom. You can contact us at **maxgerman07@icloud.com** for any privacy-related question or request.
+Shoot AI is operated by Max German, a solo developer based in the United Kingdom. You can contact us at **shootai.app@gmail.com** for any privacy-related question or request.
 
 ## 2. What we collect
 
@@ -64,7 +64,7 @@ You can, at any time:
 - **Delete your account and all data** — Settings → Danger zone → Delete account. This permanently removes your sessions, XP, leaderboard entries, and profile from our systems and signs you out.
 - **Stop using the app** — uninstalling removes all locally cached data
 
-If for any reason the in-app deletion does not work, email **maxgerman07@icloud.com** with the subject "Delete my data" and we will action it within 7 days.
+If for any reason the in-app deletion does not work, email **shootai.app@gmail.com** with the subject "Delete my data" and we will action it within 7 days.
 
 ## 6. How long we keep data
 
@@ -79,7 +79,7 @@ Shoot AI is aimed at football players, including those at academy and grassroots
 - We do **not** knowingly collect data from children under 13. If you are under 13, please do not create an account.
 - If you are 13–17, we recommend a parent or guardian helps set up your account and reviews this policy with you.
 - If we discover an account belongs to a child under 13, we will delete it.
-- Parents who want a child's account deleted can email **maxgerman07@icloud.com**.
+- Parents who want a child's account deleted can email **shootai.app@gmail.com**.
 
 ## 8. Security
 
@@ -99,4 +99,4 @@ If we change this policy in a meaningful way, we will update the "Last updated" 
 
 ## 11. Contact
 
-Questions, requests, complaints — all welcome at **maxgerman07@icloud.com**.
+Questions, requests, complaints — all welcome at **shootai.app@gmail.com**.
