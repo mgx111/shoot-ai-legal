@@ -10,7 +10,7 @@ Plain English, no legal traps.
 
 ## 1. Who we are
 
-Shoot AI is operated by Max German, a solo developer based in the United Kingdom. Contact: **maxgerman07@icloud.com**.
+Shoot AI is operated by Max German, a solo developer based in the United Kingdom. Contact: **shootai.app@gmail.com**.
 
 ## 2. Who can use Shoot AI
 
@@ -111,4 +111,4 @@ These Terms are governed by the laws of England and Wales. Any disputes will be 
 
 ## 15. Contact
 
-Questions about these Terms? Email **maxgerman07@icloud.com**.
+Questions about these Terms? Email **shootai.app@gmail.com**.
