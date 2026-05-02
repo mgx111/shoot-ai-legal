@@ -2,7 +2,7 @@
 
 Need help? Found a bug? Got a feature request?
 
-**Email: maxgerman07@icloud.com**
+**Email: shootai.app@gmail.com**
 
 I'll get back to you as soon as I can.
 
