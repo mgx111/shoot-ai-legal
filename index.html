@@ -1,34 +1,302 @@
-⚽ SHOOT AI
-COMING SOON TO APP STORE
-An AI football coach in your pocket.
-Upload a clip of your shot. In 5 seconds get a score, real biomechanics analysis, and a coaching cue for your next rep. Built for grassroots and academy players.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shoot AI — AI football shooting coach</title>
+<meta name="description" content="An AI football shooting coach in your pocket. Upload a clip, get instant feedback. Coming soon to App Store." />
+<meta property="og:title" content="Shoot AI — AI football shooting coach" />
+<meta property="og:description" content="Upload a clip. Get instant feedback. Train smarter." />
+<meta property="og:type" content="website" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0F5D3A;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
 
-Early access
-Be the first to know when we launch
-Get early access →
-Tap to email us — we'll notify you on launch day.
-What's inside
-🧠
-Real AI coaching
-Specific feedback on every rep. No generic tips — every cue is tied to your actual mechanics.
-📈
-Track your progress
-XP, streaks, weekly leaderboard against friends. See your technique improve over time.
-🎯
-Targeted drills
-Drills that match what you need to fix. Body shape, balance, follow-through — all covered.
-⚡
-5 second analysis
-Record or upload a clip. By the time you walk back to the ball, your feedback is ready.
-How it works
-1
-Record a clip
-Side-on, full body in frame. One clean rep.
-2
-AI reads your body
-Computer vision tracks 33 body landmarks frame by frame. Real biomechanics — not guesswork.
-3
-Get coaching feedback
-A score, what you did well, and one specific cue for your next rep.
-Privacy Terms Support
-© 2026 Shoot AI · shootai.app@gmail.com
+  header { padding: 28px 0 12px; }
+  .logo {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+  }
+
+  .hero { padding: 60px 0 50px; text-align: center; }
+  .tag {
+    display: inline-block;
+    color: #D8E7DD;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+    background: rgba(0,0,0,0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+  h1 {
+    font-size: clamp(40px, 8vw, 64px);
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+  .subhead {
+    font-size: clamp(16px, 3.5vw, 19px);
+    color: #D8E7DD;
+    max-width: 540px;
+    margin: 0 auto 32px;
+    font-weight: 500;
+  }
+
+  /* Email signup */
+  .signup {
+    background: #FFFFFF;
+    border-radius: 22px;
+    padding: 24px;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .signup-label {
+    color: #5C5C5C;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+  }
+  .signup-title {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+  .cta-btn {
+    display: block;
+    background: #0F5D3A;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.15s;
+  }
+  .cta-btn:hover { opacity: 0.9; }
+  .cta-sub {
+    color: #5C5C5C;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  /* Features */
+  .features { padding: 50px 0 30px; }
+  .features-title {
+    text-align: center;
+    font-size: 13px;
+    color: #D8E7DD;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  @media (min-width: 600px) {
+    .feature-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .feature {
+    background: rgba(0,0,0,0.25);
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #0F5D3A;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .feature-title {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+  .feature-text {
+    font-size: 14px;
+    color: #D8E7DD;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* How it works */
+  .how { padding: 40px 0 60px; text-align: center; }
+  .how h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+  }
+  .step {
+    background: rgba(0,0,0,0.25);
+    border-radius: 16px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .step-num {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #0F5D3A;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+  .step-body { flex: 1; }
+  .step-title { font-weight: 900; font-size: 15px; margin-bottom: 4px; }
+  .step-text { font-size: 14px; color: #D8E7DD; line-height: 1.5; font-weight: 500; }
+
+  /* Footer */
+  footer {
+    padding: 30px 0 50px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 30px;
+  }
+  footer a {
+    color: #D8E7DD;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  footer a:hover { text-decoration: underline; }
+  .copy {
+    color: #9C9C9C;
+    font-size: 12px;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">⚽ SHOOT AI</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="tag">COMING SOON TO APP STORE</div>
+    <h1>An AI football coach in your pocket.</h1>
+    <p class="subhead">
+      Upload a clip of your shot. In 5 seconds get a score, real biomechanics analysis, and a coaching cue for your next rep. Built for grassroots and academy players.
+    </p>
+
+    <div class="signup">
+      <div class="signup-label">Early access</div>
+      <div class="signup-title">Be the first to know when we launch</div>
+      <a class="cta-btn" href="mailto:shootai.app@gmail.com?subject=Shoot%20AI%20early%20access&body=I%20want%20to%20be%20notified%20when%20Shoot%20AI%20launches.">
+        Get early access →
+      </a>
+      <div class="cta-sub">Tap to email us — we'll notify you on launch day.</div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="features-title">What's inside</div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-title">Real AI coaching</div>
+        <div class="feature-text">Specific feedback on every rep. No generic tips — every cue is tied to your actual mechanics.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📈</div>
+        <div class="feature-title">Track your progress</div>
+        <div class="feature-text">XP, streaks, weekly leaderboard against friends. See your technique improve over time.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-title">Targeted drills</div>
+        <div class="feature-text">Drills that match what you need to fix. Body shape, balance, follow-through — all covered.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">5 second analysis</div>
+        <div class="feature-text">Record or upload a clip. By the time you walk back to the ball, your feedback is ready.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">Record a clip</div>
+        <div class="step-text">Side-on, full body in frame. One clean rep.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">AI reads your body</div>
+        <div class="step-text">Computer vision tracks 33 body landmarks frame by frame. Real biomechanics — not guesswork.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">Get coaching feedback</div>
+        <div class="step-text">A score, what you did well, and one specific cue for your next rep.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="https://mgx111.github.io/shoot-ai-legal/PRIVACY">Privacy</a>
+    <a href="https://mgx111.github.io/shoot-ai-legal/TERMS">Terms</a>
+    <a href="https://mgx111.github.io/shoot-ai-legal/SUPPORT">Support</a>
+    <div class="copy">© 2026 Shoot AI · shootai.app@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
